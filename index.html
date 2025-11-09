@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trufas Caseiras - Promo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Container principal com background -->
+  <main class="hero">
+    <!-- Overlay escuro para melhorar contraste -->
+    <div class="overlay"></div>
+
+    <!-- Conteúdo central (logotipo / título) -->
+    <header class="hero-header">
+      <h1 class="brand">Trufas <span>Caseiras</span></h1>
+      <p class="subtitle">Escolha seu sabor favorito e peça já!</p>
+    </header>
+
+    <!-- Menu de contato sobre o background -->
+    <nav class="contact-menu" aria-label="Menu de contato">
+      <ul>
+        <li><a href="tel:+559999999999" class="contact-link">📞 WhatsApp</a></li>
+        <li><a href="mailto:contato@trufas.com.br" class="contact-link">✉️ E-mail</a></li>
+        <li><a href="#cardapio" class="contact-link">🍫 Cardápio</a></li>
+      </ul>
+    </nav>
+
+    <!-- Card com preço e sabores (exemplificativo) -->
+    <section class="info-card" id="cardapio">
+      <h2>Sabores</h2>
+      <ul class="sabores">
+        <li>Coco</li>
+        <li>Ninho</li>
+        <li>Limão</li>
+        <li>Maracujá</li>
+        <li>Morango</li>
+        <li>Brigadeiro</li>
+      </ul>
+
+      <div class="price-badge">
+        <span>Qualquer sabor por:</span>
+        <strong>R$ 4,00</strong>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé simples -->
+  <footer class="page-footer">
+    <p>© <span id="year"></span> Trufas Caseiras — Faça sua encomenda!</p>
+  </footer>
+
+  <script>
+    // Atualiza o ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
